@@ -1,0 +1,176 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+:root{
+    --main-color:rgb(149,91,253);
+    --btn-color:rgb(122, 55, 247);
+    --bx-color:rgb(182, 144, 252);
+}
+body{
+    height: 100%;
+    background-color:var(--main-color);
+}
+#one{
+    width: 100%;
+
+}
+.container{
+    padding: 0 20px;
+    max-width: 1280px;
+    margin: 0 auto;
+
+}
+
+#one .cards{
+    gap:20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#one .card{
+    padding: 20px 0px;
+    border-radius: 20px;
+    background-color: white;
+    gap: 20px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#one .card img{
+    border-color: var(--main-color);
+   /* width: 50%;*/
+    border-radius: 40px;
+    border-style: solid;
+    object-fit: cover;
+}
+#one .style-btn{
+    display: flex;
+gap:15px;
+}
+#one button{
+    padding: 10px 20px;
+    background-color: var(--btn-color);
+    color:white;
+    border-color: var(--btn-color);
+    border-radius: 8px;
+}
+
+.carousel-control-prev {
+    left: -75px;
+}
+.carousel-control-next {
+    right: -75px;
+}
+.carousel {
+    padding: 50px 40px;
+    position: relative;
+}
+.card .bx{
+    color: var(--bx-color);
+}
+
+#one .social{
+    display: flex;
+    align-items: center;
+    gap:15px;
+}
+#one .stars{
+    display: flex;
+    align-items: center;
+    gap:5px;
+}
+.card img{
+    width: 156px;
+    height: 156px;
+}
+
+@media only screen and (max-width:1000px){
+    #one .card{
+        width: 300px;
+    }
+    .card h2{
+            font-size: 1.5rem;
+    }
+    #one button{
+        padding: 7px 15px;
+    }
+    .card img{
+        width: 150px;
+    height: 150px;
+    }
+}
+
+@media only screen and (max-width:900px){
+    #one .card{
+        width: 300px;
+        gap:10px
+    }
+    .card h2{
+            font-size: 1rem;
+    }
+    #one button{
+        padding: 4px 8px;
+    }
+    #one .style-btn{
+        gap:10px;
+    }
+    .card img{
+        width: 50%;
+    height: 100px;
+    }
+    .carousel-control-next, .carousel-control-prev {
+       
+        width: 3%;}
+        .carousel-control-prev {
+            left: 3px;
+        }
+        .carousel-control-next {
+            right: 3px;
+        }
+}
+
+@media only screen and (max-width:788px){
+    #one .card{
+        gap:5px;
+    }
+    .card p{
+        margin-top: 0;
+        margin-bottom: 0.6rem;
+    }
+    #one button{
+        font-size: 0.8rem;
+    }
+    #one .style-btn{
+        gap:5px;
+    }
+}
+@media only screen and (max-width:650px){
+    #one .style-btn{
+        flex-direction: column;
+    }
+    #one .card img {
+        /* width: 50%; */
+        border-radius: 15px}
+}
+
+@media only screen and (max-width:610px){
+    #one .cards{
+
+        flex-direction: column;
+    }
+    #one .style-btn{
+        gap: 10px;
+        flex-direction:row;
+    }
+    #one .card img {
+        /* width: 50%; */
+        border-radius: 25px}
+
+}
